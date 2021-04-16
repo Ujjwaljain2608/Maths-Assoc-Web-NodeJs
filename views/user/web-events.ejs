@@ -1,0 +1,68 @@
+<%- include('../include/head.ejs') %>
+  <link rel="stylesheet" type="text/css" href="/css/events-styles.css" >
+  <script src="/js/events.js" defer></script>
+</head>
+
+<body>
+  <%- include('../include/nav.ejs') %>
+  <main>
+    <div class="events-headings">
+        <h2 class="events-heading">Upcoming Events</h3>
+    </div>
+    <div class="upcoming-events-container">
+        <div class="upcoming-event upcoming-event1">
+            <img src="/images/up1.png">
+        </div>
+        <div class="upcoming-event upcoming-event2">
+            <img src="/images/up2.png">
+        </div>
+        <div class="upcoming-event upcoming-event3">
+            <img src="/images/up2.png">
+        </div>
+    </div>
+    <div class="events-headings">
+        <h2 class="events-heading">Past Events</h1>
+    </div>
+    <div class="events-container">
+        <div class="events-slide">
+            <div class="event" id="last-clone">
+                <img src="/images/bg4.jpg" alt="" class="image event5">
+                <h1>Volleyball Match</h1>
+            </div>
+            <div class="event">
+                <img src="/images/bg3.JPG" alt="" class="image event1">
+                <h1>Teacher's Day Celebration</h1>
+            </div>
+            <div class="event">
+                <img src="/images/bg2.jpg" alt="" class="image event2">
+                <h1>B4MO</h1>
+            </div>
+            <div class="event">
+                <img src="/images/bg1.jpg" alt="" class="image event3">
+                <h1>AMO</h1>
+            </div>
+            <div class="event">
+                <img src="/images/bg5.jpg" alt="" class="image event4">
+                <h1>Symposium</h1>
+            </div>
+            <div class="event">
+                <img src="/images/bg4.jpg" alt="" class="image event5">
+                <h1>Volleyball Match</h1>
+            </div>
+            <div class="event" id="first-clone">
+                <img src="/images/bg3.JPG" alt="" class="image event1">
+                <h1>Teacher's Day Celebration</h1>
+            </div>
+        </div>
+        <div class="left-arrow"><</div>
+        <div class="right-arrow">></div>
+        <div class="bubbles">
+            <div class="bubble bubble1 active-bubble"></div>
+            <div class="bubble bubble2"></div>
+            <div class="bubble bubble3"></div>
+            <div class="bubble bubble4"></div>
+            <div class="bubble bubble5"></div>
+        </div>
+    </div>
+  </main>
+  <%- include('../include/footer.ejs') %>

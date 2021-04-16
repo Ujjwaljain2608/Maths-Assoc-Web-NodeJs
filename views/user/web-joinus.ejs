@@ -1,0 +1,38 @@
+<%- include('../include/head.ejs') %>
+  <link rel="stylesheet" href="/css/join-styles.css">
+  <script src="/js/join-us.js" defer></script>
+</head>
+
+<body>
+  <%- include('../include/nav.ejs') %>
+  <main>
+    <section class="join-form">
+        <form action="https://mabp.herokuapp.com/join" method="POST" id="joinus-form">
+            <div class="join-form-container">
+                <div class="join-form-heading">Interested in joining?</div> 
+         <div class="join-form-heading">Send us your details</div>
+         <div class="join-form-heading heading3">And we shall get in touch!</div>
+                <div class="form form1">
+                    <label for="name">Name<span>&nbsp;*</span></label>
+                    <input type="text" name="name" class="name" id="name" placeholder="Name" required>
+                </div>
+                <div class="form form2">
+                    <label for="BITS ID">BITS ID<span>&nbsp;*</span></label>
+                    <input type="text" name="bitsid" class="BITS ID" id="BITS ID" placeholder="BITS ID" required>
+                </div>
+                <div class="form form3">
+                    <label for="mobile">Contact Number<span>&nbsp;*</span></label>
+                    <input type="text" name="mobile" class="mobile" id="mobile" placeholder="Contact Number" required>
+                </div>
+                <div class="form form4">
+                    <label for="mail">BITS Email<span>&nbsp;*</span></label>
+                    <input type="email" name="mail" class="mail" id="mail" placeholder="BITS Email" required>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="submit-contact" id="submit-contact">SUBMIT</button>
+            </div>
+        </form>
+    </section>
+  </main>
+  <%- include('../include/footer.ejs') %>
